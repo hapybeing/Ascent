@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en" class="is-loading">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Ascent</title>
+    <meta name="description" content="A slow climb from a sea of light to a ring of light at the top of the world." />
+    <meta name="theme-color" content="#F4F1EC" />
+    <meta property="og:title" content="Ascent" />
+    <meta property="og:description" content="A slow climb from a sea of light to a ring of light at the top of the world." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://hapybeing.github.io/Ascent/" />
+    <meta property="og:image" content="https://hapybeing.github.io/Ascent/og.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="A ring of light hanging in a pale periwinkle sky with faint daylight stars." />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Ascent" />
+    <meta name="twitter:description" content="A slow climb from a sea of light to a ring of light at the top of the world." />
+    <meta name="twitter:image" content="https://hapybeing.github.io/Ascent/og.jpg" />
+    <link rel="canonical" href="https://hapybeing.github.io/Ascent/" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32.png" />
+    <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
+    <link rel="preload" href="./fonts/Zodiak-Light.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="./fonts/DMMono-Regular.woff2" as="font" type="font/woff2" crossorigin />
+    <style>html{background:#dce6ea}</style>
+    <script type="module" crossorigin src="./assets/index-DeFzfe87.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-ChoAFFaQ.css">
+  </head>
+  <body>
+    <canvas id="gl" aria-hidden="true"></canvas>
+    <div id="veil" aria-hidden="true"></div>
+
+    <div id="poster" hidden>
+      <img src="./poster.jpg" alt="A pale sea meeting a peach sky; two silk ribbons rise out of the water toward a low sun." />
+      <p class="poster__line">This sky needs WebGL to move. Here it is, held still.</p>
+    </div>
+
+    <header class="chrome">
+      <span class="wordmark" aria-label="Ascent">ASCENT</span>
+      <button id="sound" class="sound" type="button" aria-pressed="false" aria-label="Sound off. Turn sound on">
+        <canvas aria-hidden="true"></canvas>
+        <span class="sound__label">Silence</span>
+      </button>
+    </header>
+
+    <div id="meter" class="meter" aria-hidden="true">
+      <span class="meter__line"></span>
+      <span class="meter__rail"><span class="meter__tick"><span class="meter__value">&minus;120 m</span></span></span>
+    </div>
+    <p id="meter-live" class="sr-only" aria-live="polite"></p>
+
+    <main id="stage" class="stage" aria-label="Ascent"></main>
+    <p id="live" class="sr-only" aria-live="polite"></p>
+
+    <div id="end" class="end" aria-hidden="true">
+      <p class="end__stay">Stay as long as you like.</p>
+      <a id="descend" class="end__descend" href="#top" tabindex="-1">Descend</a>
+      <p class="end__colophon">three.js, GLSL, Web Audio, GSAP, Lenis. Zodiak and DM Mono.</p>
+    </div>
+
+    <div id="cue" class="cue is-gone" aria-hidden="true">
+      <span class="cue__line"></span>
+      <span class="cue__word">rise</span>
+    </div>
+
+    <div id="threshold" class="threshold" role="dialog" aria-modal="true" aria-label="Ascent">
+      <div class="threshold__mark" aria-hidden="true">
+        <svg viewBox="0 0 100 100" class="threshold__ring">
+          <circle class="threshold__track" cx="50" cy="50" r="46" />
+          <circle class="threshold__progress" cx="50" cy="50" r="46" />
+        </svg>
+        <span class="threshold__dot"></span>
+      </div>
+      <div class="threshold__choices" hidden>
+        <button type="button" data-sound="on">Enter with sound</button>
+        <button type="button" data-sound="off">Enter in silence</button>
+        <p class="threshold__note">Headphones recommended</p>
+      </div>
+    </div>
+
+    <div id="track" class="track" aria-hidden="true"></div>
+    <noscript><p class="noscript">This sky needs JavaScript to rise.</p></noscript>
+  </body>
+</html>
