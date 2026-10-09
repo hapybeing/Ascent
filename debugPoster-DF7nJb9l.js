@@ -1,2 +1,0 @@
-import{n as e}from"./index-CImQ7bNE.js";function t(){let t=document.createElement(`pre`);t.className=`debug-overlay`,t.setAttribute(`aria-hidden`,`true`),t.textContent=[`renderer poster`,...e.list().map(e=>`  ${e.scope}: ${e.message}`)].join(`
-`),document.body.appendChild(t)}export{t as mountPosterDebug};
