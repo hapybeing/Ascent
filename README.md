@@ -1,6 +1,6 @@
 # ASCENT
 
-### ▶ Live: **[hapybeing.github.io/Ascent](https://hapybeing.github.io/Ascent/)**
+### ▶ Live: https://ascent-inky-five.vercel.app/
 
 *Start where the light is thin.*
 
